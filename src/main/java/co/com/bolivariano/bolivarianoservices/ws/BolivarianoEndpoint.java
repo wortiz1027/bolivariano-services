@@ -20,7 +20,7 @@ public class BolivarianoEndpoint {
 
     @PayloadRoot(namespace = "http://co.bolivariano.com/journeys", localPart = "GetJourneyRequest")
     @ResponsePayload
-    public GetJourneyResponse getFlights(@RequestPayload GetJourneyRequest request) throws FTPErrors, ExecutionException, InterruptedException {
+    public GetJourneyResponse getJourneys(@RequestPayload GetJourneyRequest request) throws FTPErrors, ExecutionException, InterruptedException {
         return service.download().get();
     }
 
