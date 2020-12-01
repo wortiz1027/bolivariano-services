@@ -19,6 +19,7 @@ RUN mvn clean package -Dmaven.test.skip=true
 FROM adoptopenjdk:11-jre-hotspot
 
 ENV APP_HOME "/app"
+ENV DOWNLOAD_DIR "/tmp/download"
 ENV HTTP_PORT 7071
 
 # Informacion de la persona que mantiene la imagen
@@ -38,7 +39,7 @@ LABEL org.opencontainers.image.created=$BUILD_DATE \
 EXPOSE $HTTP_PORT
 
 # Creando directorio de la aplicacion
-RUN mkdir $APP_HOME
+RUN mkdir $APP_HOME $DOWNLOAD_DIR
 
 # Seteando el workspace
 WORKDIR $APP_HOME

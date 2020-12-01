@@ -9,7 +9,7 @@
 version: '3.7'
 services:
   bolivariano-service:
-    image: wortiz1027/bolivariano-services:latest
+    image: wortiz1027/bolivariano-service:latest
     container_name: bolivariano-service
     hostname: bolivariano-service
     restart: always
