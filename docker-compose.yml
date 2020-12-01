@@ -19,6 +19,11 @@ services:
       - ntw_backend
     environment:
       - SERVICE_PORTS=7071
+      - FTP_HOST=10.100.137.182
+      - FTP_PORT=21
+      - FTP_USER=toures
+      - FTP_PASS=T0u3r3sBal0n
+      - FTP_USER_HOME=/home/vsftpd/toures/bolivariano.csv
 
 networks:
   ntw_backend:
