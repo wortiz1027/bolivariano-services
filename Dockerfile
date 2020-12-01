@@ -45,5 +45,6 @@ RUN mkdir $APP_HOME $DOWNLOAD_DIR
 WORKDIR $APP_HOME
 
 COPY --from=BUILDER /build/target/bolivariano-service.jar ${APP_HOME}
+COPY data.csv ${DOWNLOAD_DIR}
 
 ENTRYPOINT ["java","-jar","/app/bolivariano-service.jar"]

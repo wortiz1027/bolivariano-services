@@ -14,7 +14,7 @@ server:
 # +-----------------------------------------------------
 bolivariano:
   local:
-    path: /tmp/download/datos.csv
+    path: /tmp/download/data.csv
     #path: c:\\tmp\\download\\datos.csv
   ftp:
     server:

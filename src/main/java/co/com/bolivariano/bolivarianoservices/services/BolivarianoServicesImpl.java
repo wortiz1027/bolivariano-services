@@ -118,7 +118,7 @@ public class BolivarianoServicesImpl implements BolivarianoServices {
         }
 
         try {
-            this.client.retrieveFile(remote, fos);
+            //this.client.retrieveFile(remote, fos);
 
             //CSVReader reader = new CSVReader(new FileReader(local));
             CSVReader reader = new CSVReaderBuilder(new FileReader(local)).withSkipLines(1).build();
